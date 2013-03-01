@@ -2,6 +2,7 @@
     {
         "view": "build_status",
         "dataUri": "/widget/hudson/data",
+        "name": "Build status",
         "options": {
             "title": "Jenkins POM",
             "subtitle": "Hudson",
@@ -11,6 +12,7 @@
     {
         "view": "build_status",
         "dataUri": "/widget/hudson/data",
+        "name": "Build status",
         "options": {
             "title": "Spring MVC",
             "subtitle": "Hudson",
@@ -20,6 +22,7 @@
     {
         "view": "build_status",
         "dataUri": "/widget/travis/data",
+        "name": "Build status",
         "options": {
             "title": "Dash",
             "subtitle": "Travis",
@@ -29,6 +32,7 @@
     {
         "view": "ping",
         "dataUri": "/widget/ping/data",
+        "name": "Ping",
         "options": {
             "title": "Ping",
             "subtitle": "Google",
