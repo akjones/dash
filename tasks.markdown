@@ -2,8 +2,6 @@
 ## Just write your name in front of a task if you're working on it
 
 
-- move "size" out of static JSON into client-side template
-- move "view" out of static JSON into server widget code
 - what is "all_widgets"?
     * dynamic list of all possible widgets (ie DB)
 - dashboard.json: which widgets we want, and their options
@@ -12,6 +10,17 @@
     what about multiple dashboards on the same server?
 - when asking for widget data
     need to give configation, instead of using hardcoded URIs
+
+## Andrew's take
+- all widgets is all widget archetypes available on the server
+- user chooses which widgets they want on the edit screen
+- the activated widgets display their options
+- activated widgets send their config when asking for widget data
+- dashboard config stored in html localstorage (then many dashboards can be powered by the same server)
+
+## Done
+- move "size" out of static JSON into client-side template
+- move "view" out of static JSON into server widget code
 
 
 # High level tasks
