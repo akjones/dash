@@ -1,5 +1,8 @@
 exports.page = (req, res) ->
-    res.render 'edit'
+    res.render 'edit', {
+        uri: '/widgets'
+    }
+
 
 parse_multipart = (req) ->
     parser = multipart.parser()

@@ -14,11 +14,32 @@
     </head>
 
     <body>
-        
-        <form method="post" action="/uploadConfig" enctype="multipart/form-data">
-            <input name="config" type="file" />
-            <input type="submit" value="Upload" />
-        </form>
+        <h1>Customise your dashboard</h1>
+
+        <a href="/">
+            <div class="folded-corner"></div>
+        </a>
+
+        <%- js('jquery-1.8.0.min') %>
+        <%- js('jquery.gridster.min') %>
+        <%- js('ICanHaz.min') %>
+        <%- js('spin.min') %>
+        <%- js('jquery.spin') %>
+        <%- js('protovis.min') %>
+        <%- js('eve-0.3.5') %>
+        <%- js('edit') %>
+
+        <script>
+            $(document).ready(function() {
+                var dashConfig = Dash.DashboardConfig()
+                dashConfig.getWidgets('<%= uri %>');
+            });
+        </script>
+
+        <div class='js-available-widgets available-widgets'>
+          <h2>Available widgets</h2>
+          <ul></ul>
+        </div>
 
     </body>
 
