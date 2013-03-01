@@ -16,7 +16,9 @@
 - user chooses which widgets they want on the edit screen
 - the activated widgets display their options
 - activated widgets send their config when asking for widget data
-- dashboard config stored in html localstorage (then many dashboards can be powered by the same server)
+- dashboard config stored in html localstorage (corrolary is that many dashboards can be powered by the same server)
+
+- want to develop plugin architecture for plugins
 
 ## Done
 - move "size" out of static JSON into client-side template
