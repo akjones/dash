@@ -38,5 +38,15 @@
             "subtitle": "Google",
             "position": { "row": 1, "col": 3 }
         }
+    },
+    {
+        "view": "analytics",
+        "dataUri": "/widget/ga_realtime/data",
+        "name": "Analytics",
+        "options": {
+            "title": "Visitors",
+            "subtitle": "GetUp!",
+            "position": { "row": 1, "col": 3 }
+        }
     }
 ]

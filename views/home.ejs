@@ -186,6 +186,24 @@
             </li>
         </script>
 
+        <script id="analytics" type="text/html">
+            <li class="widget" data-row="{{options.position.row}}" data-col="{{options.position.col}}" data-sizex="1" data-sizey="1">
+                <span class="type">{{options.subtitle}}</span>
+                {{^data}}
+                    <div class="widget">Spinner</div>
+                {{/data}}
+                {{#data}}
+                    <div class="widget status-pass" data-sizey="1">
+                        <div class="content">
+                            <div class="title">{{options.title}}</div>
+                            <div class="visitors">{{visitors}}</div>
+                            </div>
+                        </div>
+                    </div>
+                {{/data}}
+            </li>
+        </script>
+
     </body>
 
 </html>

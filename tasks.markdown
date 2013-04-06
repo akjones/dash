@@ -1,6 +1,8 @@
 # TODO soon
 ## Just write your name in front of a task if you're working on it
 
+### ga_realtime
+- make wait smarter
 
 - what is "all_widgets"?
     * dynamic list of all possible widgets (ie DB)

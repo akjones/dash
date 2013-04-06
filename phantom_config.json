@@ -1,0 +1,8 @@
+{
+  "ignoreSslErrors": true,
+  "cookiesFile": "cookies.txt",
+  "diskCache": true,
+  "loadImages": true,
+  "localToRemoteUrlAccess": true,
+  "webSecurity": false
+}
