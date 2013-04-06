@@ -22,7 +22,7 @@ exports.data = (error, response) ->
           if status != "success"
             console.log("Unable to access network")
           else
-            page.injectJs('../../credentials.json')
+            page.injectJs('../../ga_credentials.json')
 
         page.open uri, ->
           logIn page

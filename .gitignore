@@ -3,4 +3,5 @@ npm-debug.log
 builtAssets
 cookies.txt
 credentials.json
+ga_credentials.json
 /tmp/*
