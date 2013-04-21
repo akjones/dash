@@ -25,7 +25,7 @@
         "name": "Analytics",
         "options": {
             "title": "Visitors",
-            "subtitle": "GetUp!"
+            "subtitle": "GetUp!",
             "position": { "row": 1, "col": 3 }
         }
     }
