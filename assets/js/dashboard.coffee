@@ -2,11 +2,18 @@
 
 window.Dash = window.Dash || {}
 window.Dash.Dashboard = ->
+    serialize = (params) ->
+        str = []
+        for name, value of params
+            str.push(encodeURIComponent(name) + "=" + encodeURIComponent(value))
+            str.join("&")
 
     # Render and refresh all widgets
     Widget = ($elem, widget) ->
+        serializedParams = if widget.params then serialize(widget.params) else ""
+        dataUri = widget.dataUri + '/' + serializedParams
         refresh = ->
-            $.ajax widget.dataUri, {
+            $.ajax dataUri, {
                 dataType: 'json'
                 success: (data) ->
                     $child = ich[widget.view] {data:  $.extend(widget, data) }

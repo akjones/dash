@@ -1,4 +1,3 @@
-
 # Module dependencies
 express = require 'express'
 http = require 'http'
@@ -35,6 +34,7 @@ app.configure 'production', ->
 app.get '/', home.dashboard
 app.get '/widgets', widgets.get
 app.get '/widget/:type/data', data.get
+app.get '/widget/:type/data/:params', data.get
 app.get '/edit', edit.page
 app.post '/uploadConfig', edit.upload_file
 

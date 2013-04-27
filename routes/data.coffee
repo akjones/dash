@@ -27,10 +27,11 @@ notSupported = (res) ->
     res.write 'Not supported'
     res.end()
 
-exports.test = (req, res) ->
+exports.get = (req, res) ->
     if widgetName of widgets
-        widgets[req.params.type].data error(res), success(res)
+        if req.params.params
+            widgets[req.params.type].data error(res), success(res), req.params.params
+        else
+            widgets[req.params.type].data error(res), success(res)
     else
         notSupported(res)
-
-exports.get = exports.test
